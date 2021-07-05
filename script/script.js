@@ -6,7 +6,7 @@ const bookList = document.querySelector('#book-list');
 
 btn.addEventListener('click', function(e){
     e.preventDefault();
-    if(title.value == '' && author.value == '' && year.value == ''){
+    if(title.value === '' && author.value === '' &&  year.value === ''){
         alert('Please Insert Value!');
     }else{
         const newRow = document.createElement('tr');
@@ -24,5 +24,6 @@ btn.addEventListener('click', function(e){
         newRow.appendChild(newYear);
 
         bookList.appendChild(newRow);
+
     }
 })
